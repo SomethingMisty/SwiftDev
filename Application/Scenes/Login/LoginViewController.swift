@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
 // MARK: - Аутлеты
     
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     func checkAuth() -> Bool {
         let login = loginTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        if !(login.isEmpty && password.isEmpty) && login == "1" && password == "1" {
+        if !(login.isEmpty && password.isEmpty) && login == "0" && password == "0" {
             return true
         } else {
             return false
