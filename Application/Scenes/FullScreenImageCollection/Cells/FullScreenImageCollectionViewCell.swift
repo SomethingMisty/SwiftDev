@@ -10,4 +10,5 @@ import UIKit
 class FullScreenImageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imageFull: UIImageView!
+    
 }
