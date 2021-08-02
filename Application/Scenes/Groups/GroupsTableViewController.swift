@@ -45,6 +45,7 @@ class GroupsTableViewController: UITableViewController {
         }
         cell.imageGroup.image = group[indexPath.row].image
         cell.nameGroup.text = group[indexPath.row].name
+        
         return cell
     }
     
