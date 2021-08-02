@@ -10,6 +10,16 @@ import UIKit
 
 class FullScreenImageCollectionViewController: UICollectionViewController {
     
+    var currentPhoto: UIImage!
+   
+//    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//       
+//    }
+//    
+    
+    
     private var reuseID = "FullScreenImageCollectionViewCell"
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -20,6 +30,7 @@ class FullScreenImageCollectionViewController: UICollectionViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseID, for: indexPath) as? FullScreenImageCollectionViewCell else {
             fatalError("{Message: Error in dequeue FriendTableViewCell}")
         }
+        cell.imageFull.image = currentPhoto
         return cell
     }
 }
